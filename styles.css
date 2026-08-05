@@ -425,6 +425,16 @@ section{ padding: 88px 0; position:relative; }
   text-decoration: line-through; text-decoration-color: rgba(255,255,255,.5);
   color: var(--gold-light); font-family: var(--display); font-weight:700; font-size: 30px;
 }
+.data-destaque{
+  display:inline-block;
+  background: var(--gold);
+  color: var(--choc);
+  font-weight: 800;
+  padding: 2px 12px;
+  border-radius: 100px;
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 10px -3px rgba(0,0,0,.4);
+}
 .tudo-gratis-badge{
   margin: 26px auto 4px;
   max-width: 320px;
