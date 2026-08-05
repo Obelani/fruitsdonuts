@@ -165,7 +165,7 @@
 
     <!-- VALUE STACK -->
     <div class="value-stack">
-      <h3>E somente hoje (05/ago) você leva:</h3>
+      <h3>E somente hoje (<span id="data-hoje" class="data-destaque">05/ago</span>) você leva:</h3>
       <div class="value-row"><span>Método Fruit Donuts — Guia Completo</span><span class="val">R$ 97</span></div>
       <div class="value-row"><span>Bônus 1 — Painel de Metas e Faturamento</span><span class="val">R$ 67</span></div>
       <div class="value-row"><span>Bônus 2 — Método Post que Atrai Clientes</span><span class="val">R$ 47</span></div>
@@ -315,5 +315,15 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var meses = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+  var hoje = new Date();
+  var dia = String(hoje.getDate()).padStart(2, "0");
+  var mes = meses[hoje.getMonth()];
+  var el = document.getElementById("data-hoje");
+  if (el) el.textContent = dia + "/" + mes;
+})();
+</script>
 </body>
 </html>
